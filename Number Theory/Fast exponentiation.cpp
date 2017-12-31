@@ -10,7 +10,8 @@ int power(int a ,int b)
     
     while(b)
     {
-        if(b % 2) result *= a;
+        if(b % 2)
+            result *= a;
 
         a *= a;
         b /= 2;
