@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 #define int long long
+
 int x = 0, y = 0, temp = 0;
 
 int power(int a, int b, int m)
