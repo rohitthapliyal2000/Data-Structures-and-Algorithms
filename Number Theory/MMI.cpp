@@ -8,15 +8,17 @@ int x = 0, y = 0, temp = 0;
 int power(int a, int b, int m)
 {
     a %= m;
+    
     if(b == 1 || b == 0)
         return a;
+    
     if(b % 2)
     {
-        return (a * power((a * a)%m, (b-1)/2, m)) % m;
+        return (a * power((a * a) % m, (b-1)/2, m)) % m;
     }
     else
     {
-        return (power((a * a)%m, (b)/2, m) % m);
+        return (power((a * a) % m, (b)/2, m) % m);
     }
 }
 
@@ -41,5 +43,5 @@ signed main()
     int a, b, c, m;
     cin >> a >> b >> c >> m;
     inv(c, m);
-    cout << (((power(a, b, m))%m) * ((x + m) % m)) % m;
+    cout << (((power(a, b, m)) % m) * ((x + m) % m)) % m;
 }
