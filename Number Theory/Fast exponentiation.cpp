@@ -33,7 +33,7 @@ int power(int a, int b)
         return (power(a * a, b/2));
     }
 }
- 
+
 signed main()
 {
     int a, b;
